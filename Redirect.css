@@ -1,0 +1,54 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, #666666 0%, #292929 100%)  #666666!important;
+  padding-top: 0!important; 
+  overflow: hidden;
+}
+.anim-contain {
+  left: 52%;
+  top: 400px;
+  position: relative;
+}
+.anim-r-h {
+  animation-name: hammer;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  position: relative;
+  max-width: 250px!important;
+  left: px;
+  top: px;
+}
+.anim-r-a {
+  max-width: 500px!important;
+  position: relative;
+  left: -290px;
+  top: -32px;
+}
+@keyframes hammer { 
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-27.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.box {
+  border: 5px solid darkgray;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+.btn-s {
+  margin: 10px!important;
+  padding: 10px!important;
+  font-size: 24pt;
+  max-width: 100px!important;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
