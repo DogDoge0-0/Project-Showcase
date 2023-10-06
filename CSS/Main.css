@@ -39,7 +39,7 @@ html {
   margin: 10px;
   color: lightgrey!important;
 }
-search-button {
+.search-button {
 	width: 200px;
 	height: 50px;
 	border: 1px solid black;
