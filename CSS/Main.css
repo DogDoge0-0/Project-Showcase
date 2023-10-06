@@ -39,17 +39,8 @@ html {
   margin: 10px;
   color: lightgrey!important;
 }
-.search-1 {
-  max-height: 50px;
-  display: flex;
-  top: 30px;
-  position: relative;
-}
-.search-2 {
-  max-height: 50px;
-  display: flex;
-  top: 20px;
-  position: relative;
+search-button {
+	width: 200px;
 }
 .buttonNav {
   background-color: #3caaaa;
