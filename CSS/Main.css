@@ -40,11 +40,15 @@ html {
   color: lightgrey!important;
 }
 .search-button {
-	width: 200px;
+	width: 225px;
 	height: 50px;
-	border: 1px solid black;
+	border: 1px solid white;
 	border-radius: 5px;
-	background: transparent;
+	background: #333;
+	color: #b1b1b1;
+}
+.search-button:hover {
+	border: 2px solid white;
 	color: whitesmoke;
 }
 .buttonNav {
