@@ -28,7 +28,7 @@ html {
   color: #0000ff;
   font-size: 24pt;
 }
-@media (max-width: 1399px) {
+@media (max-width: 992px) {
   .offcanvas {
     background-image: linear-gradient(to bottom, #434343 75%, black 100%);
   }
