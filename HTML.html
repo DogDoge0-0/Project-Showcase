@@ -52,8 +52,7 @@
             </li>
 					</ul>
 					<form class="d-flex align-items-center" role="search">
-						<input class="search" type="search" placeholder="Search" aria-label="Search">
-						<button disabled class="buttonNoHover buttonGreen disabled" type="submit">Search</button>
+						<input class="search" type="button" placeholder="🔍 Search my HTML Projects" aria-label="button" >
 					</form>
 				</div>
 			</div>
@@ -209,6 +208,25 @@
 						onclick="window.location.href='HTML/NSS/BlackbaudPlus.html'">
 						Blackbaud Plus
 					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modals -->
+	<div class="modal fade" id="searchResultsModal" tabindex="-1" aria-labelledby="searchResultsModalLabel"
+		aria-hidden="true" data-bs-theme="dark">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header d-flex justify-content-center">
+					<h1 class="modal-title fs-5" id="searchResultsModalLabel">
+						<input class="search" type="search" placeholder="🔍 Search my HTML Projects" aria-label="Search" id="searchInput" data-bs-toggle="modal" data-bs-target="#searchResultsModal">
+					</h1>
+				</div>
+				<div class="modal-body" id="searchResults">
+					No Results Found
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
