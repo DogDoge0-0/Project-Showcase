@@ -90,12 +90,6 @@ html {
     background-color: rgba(60, 170, 170, 1);
   }
 }
-.search {
-	padding: 10px;
-	border: 1px solid black;
-	border-radius: 7.5px;
-	margin: 10px;
-}
 /* Buttons */
 .btn-l {
   max-height: 60px;
