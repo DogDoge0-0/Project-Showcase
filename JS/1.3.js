@@ -8,7 +8,7 @@ keyEnter.addEventListener('click', function() {
   key = prompt('Please enter your key now');
   if (key === 'AfRjwQmkt') {
     alert('Key has been entered sucessfully\nTeleport will occur once you press \'OK\'.');
-      window.location.href = "AfRjwQmkt.html";
+      window.location.href = "13.html";
   }
   else {
     alert('Key is incorrect, try again');
