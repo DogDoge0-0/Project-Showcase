@@ -144,7 +144,7 @@ function displayResults(results) {
 	searchResults.innerHTML = '';
 
 	// Display results in the results container
-	if (results.length === 0) {
+	if (results.length === 0 || searchInput.value == '') {
 		const noResultsElement = document.createElement('div');
 		noResultsElement.innerHTML = `No Results Found`;
 		searchResults.appendChild(noResultsElement);
