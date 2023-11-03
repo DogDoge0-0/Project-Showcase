@@ -87,11 +87,36 @@ const yourContentArray = [
 		content: 'This project was my first time using the Bootstrap framework, which I have continued to use to this day.'
 	},
 	{
-		title: '2.5: Make a Robot',
+		title: '2.5: Responsive Personal Website',
 		link: '../../HTML/Unit2/2.5.html',
 		content: 'This project is this project.'
 	},
 	// Unit 3
+	{
+		title: '3.1: Intro to JS Tutorial',
+		link: '../../HTML/Unit3/3.1.html',
+		content: 'This was my first time making actual code, in the form of JavaScript.'
+	},
+	{
+		title: '3.2: Make a Card',
+		link: '../../HTML/Unit3/3.2.html',
+		content: 'This was the second time I used JavaScript in an actual website.'
+	},
+	{
+		title: '3.3: Advanced CSS Scene',
+		link: '../../HTML/Unit3/3.3.html',
+		content: 'This was my first proper &#39;game&#39;, about guessing numbers (with a twist).'
+	},
+	{
+		title: '3.4: Responsive Portfolio',
+		link: '../../HTML/Unit3/3.4.html',
+		content: 'This project my second &#39;game&#39;, about guessing colors.'
+	},
+	{
+		title: '3.5: Make a Robot',
+		link: '../../HTML/Unit3/3.5.html',
+		content: 'This project was a collaborative effort to make an actual game, and we did it, <em>kind of</em>.'
+	},
 ];
 // Font size changer
 function updateButtonFontSize() {
