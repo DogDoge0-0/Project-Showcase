@@ -3,7 +3,10 @@ let buttons = document.querySelectorAll(".btn-c-m");
 let searchInput = document.querySelector('#searchInput');
 let searchResults = document.querySelector('#searchResults');
 
-// Font size changer
+// Add an event listener to the input field to trigger search
+searchInput.addEventListener('input', performSearch);
+
+// [FONT SIZE CHANGER]
 function updateButtonFontSize() {
   let screenWidth = window.innerWidth;
   buttons.forEach(button => {
@@ -117,32 +120,7 @@ const yourContentArray = [
 		content: 'This project was a collaborative effort to make an actual game, and we did it, <em>kind of</em>.'
 	},
 ];
-// Font size changer
-function updateButtonFontSize() {
-	let screenWidth = window.innerWidth;
-	buttons.forEach(button => {
-		if (screenWidth < 1200 && screenWidth > 992) {
-			button.style.fontSize = "14pt";
-		}
-		else if (screenWidth < 992) {
-			button.style.fontSize = "18pt";
-		}
-		else {
-			button.style.fontSize = "18pt";
-		}
-	});
-}
-
-// Update once to set the initial font size
-updateButtonFontSize();
-
-// Update every time the window is resized
-window.addEventListener("resize", updateButtonFontSize);
-
-
 // [SEARCH]
-
-// Add an event listener to the input field to trigger search
 
 // Function to perform the search
 function performSearch() {
