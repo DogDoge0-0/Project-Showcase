@@ -29,7 +29,7 @@ html, body {
 .btn-contain {
   max-height: 50px;
 }
-#searchResults div div div div p {
+#searchResults div>p {
 	color: white;
 }
 /* Showcase Pages */
