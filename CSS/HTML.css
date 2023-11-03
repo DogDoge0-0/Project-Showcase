@@ -29,6 +29,9 @@ html, body {
 .btn-contain {
   max-height: 50px;
 }
+#searchResults div div div div p {
+	color: white;
+}
 /* Showcase Pages */
 .iframe-contain {
   height: 75vh!important;
