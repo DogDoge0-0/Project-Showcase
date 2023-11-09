@@ -1,1 +1,3 @@
-const buttonIds = document.querySelectorAll('button').map(button => button.id);
+// Initialization
+const buttonIds = [];
+document.querySelectorAll('button').forEach(button => buttonIds.push(button.id));
