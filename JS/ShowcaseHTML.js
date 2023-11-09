@@ -1,2 +1,0 @@
-// Initialization
-const buttonIds = [document.querySelector("#1_1"), document.querySelector("#1_2"), document.querySelector("#1_3"), document.querySelector("#1_4"), document.querySelector("#1_5"), document.querySelector("#1_6"), document.querySelector("#1_7"), document.querySelector("#2_1"), document.querySelector("#2_2"), document.querySelector("#2_3"), document.querySelector("#2_4"), document.querySelector("#2_5"), document.querySelector("#3_1"), document.querySelector("#3_2"), document.querySelector("#3_3"), document.querySelector("#3_4"), document.querySelector("#3_5")]
