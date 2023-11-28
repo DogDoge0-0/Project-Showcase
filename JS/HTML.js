@@ -115,7 +115,7 @@ const yourContentArray = [
 		content: 'This project my second &#39;game&#39;, about guessing colors.'
 	},
 	{
-		title: '3.5: Make a Robot',
+		title: '3.5: Minigame',
 		link: '../HTML/Unit3/3.5.html',
 		content: 'This project was a collaborative effort to make an actual game, and we did it, <em>kind of</em>.'
 	},
