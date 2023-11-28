@@ -1,4 +1,4 @@
-// Initialization
+si// Initialization
 let buttons = document.querySelectorAll(".btn-c-m");
 let searchInput = document.querySelector('#searchInput');
 let searchResults = document.querySelector('#searchResults');
@@ -79,7 +79,7 @@ const yourContentArray = [
 		content: 'This was the first time I used animations in Cascading Style Sheets.'
 	},
 	{
-		title: '2.3: Advanced CSS Scene',
+		title: '2.3: Guessing Game',
 		link: '../HTML/Unit2/2.3.html',
 		content: 'This was my first overly ambitious project, which had to be massively scaled down due to lack of time.'
 	},
