@@ -74,7 +74,7 @@ const yourContentArray = [
 		content: 'This was my first time using Scaleable Vector Graphics icons.'
 	},
 	{
-		title: '2.2: Make a Card',
+		title: '2.2: Animate a Ferris Wheel',
 		link: '../HTML/Unit2/2.2.html',
 		content: 'This was the first time I used animations in Cascading Style Sheets.'
 	},
@@ -100,7 +100,7 @@ const yourContentArray = [
 		content: 'This was my first time making actual code, in the form of JavaScript.'
 	},
 	{
-		title: '3.2: Make a Card',
+		title: '3.2: First JS Website',
 		link: '../HTML/Unit3/3.2.html',
 		content: 'This was the second time I used JavaScript in an actual website.'
 	},
