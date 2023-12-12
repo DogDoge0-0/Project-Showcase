@@ -1,0 +1,156 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#background {
+	background-image: url(https://wallpaper.dog/large/20552168.jpg);
+  height: 100%;
+  width: 100%;
+  position: abosolute;
+  left: -10px;
+  top: -10px;
+}
+#scene-description {
+	text-align: center;
+	font-family: "Trebuchet MS", Sans-Serif;
+	font-size: 0.5em;
+	color: white;
+	border: 2px solid black;
+	background-color: rgba(0,0,0,0.5);
+	margin: auto;
+	width: 90%;
+}
+#scene-container {
+	border: 2px solid black;
+	background-color: white;
+	margin: auto;
+	width: 70%;
+  height: 50%;
+	min-height: 300px;
+}
+#circle-stop {
+  border: 5px solid black;
+  background-color: white;
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  top: 300px;
+  animation: circle-stop 0.7s ease-in-out infinite;
+  visibility: visible;
+}
+#square-stop {
+  border: 5px solid black;
+  background-color: white;
+  border-radius: 0px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 20%;
+  top: 250px;
+  animation: square-stop 0.7s ease-in-out infinite;
+  animation-delay: 1s;
+  visibility: visible;
+}
+#triangle-stop-1 {
+  border-radius: 0px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 75%;
+  top: 150px;
+  border-left: 12.5px solid transparent;
+  border-right: 12.5px solid transparent;
+  border-bottom: 25px solid black;
+  animation: triangle-stop-1 0.7s ease-in-out infinite;
+  animation-delay: 2s;
+  visibility: visible;
+}
+#triangle-stop-2 {
+  border-radius: 0px;
+  width: 0;
+  height: 0;
+  right: 5.5px;
+  top: 9.5px;
+  position: relative;
+  border-left: 5.5px solid transparent;
+  border-right: 5.5px solid transparent;
+  border-bottom: 11px solid white;
+  animation: triangle-stop-2 0.7s ease-in-out infinite;
+  animation-delay: 2s;
+  visibility: visible;
+}
+/* rgba(100,203,244,255) (border water) */
+/* rgba(197,230,250,255) (middle water) */
+#water {
+  background-color: rgba(197,230,250,255);
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  top: 100px;
+  left: 50px;
+  border-radius: 10px;
+  border-color: rgba(100,203,244,255);
+  transform: rotate(45deg);
+  z-index: -1;
+  visibility: hidden;
+}
+/* Animations */
+@keyframes circle-stop {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+  transform: scale(1.5);
+  }
+  100% {
+  transform: scale(1);
+  }
+}
+@keyframes square-stop {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+  transform: scale(1.5);
+  }
+  100% {
+  transform: scale(1);
+  }
+}
+@keyframes triangle-stop-1 {
+  0% {
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  }
+  50% {
+  transform: scale(1.5);
+  }
+  100% {
+  transform: scale(1);
+  }
+}
+@keyframes triangle-stop-2 {
+  0% {
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  }
+  50% {
+  transform: scale(1.5);
+  bottom: 1px;
+  right: 0px;
+  }
+  100% {
+  transform: scale(1);
+  }
+}
