@@ -1,0 +1,93 @@
+html {
+  height: 100%;
+  width: 99.5%;
+  background-color: #131e25;
+  overflow-x: hidden;
+}
+body {
+  overflow-y: visible!important;
+}
+.Title {
+  text-align: center;
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke: 1px #ffa34d;
+  overflow-y: hidden;
+}
+.Main_Description {
+  text-align: center;
+  color:whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
+}
+.Secondary_Description {
+  color:whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  overflow-y: hidden;
+}
+.Replit_Link{
+  color:#5c5cff;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
+}
+.Main_List {
+  color:whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
+}
+.Main_Links {
+  color:#5c5cff;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
+}
+.DIV {
+  background: radial-gradient(circle at 50% 50%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 10%, rgb(255, 163, 77) 75%, rgb(255, 163, 77) 60%, rgb(19, 30, 37) 0%, rgb(19, 30, 37) 0%);
+  overflow-y: hidden;
+} /*gradient ^above^ by gradients.shecodes.io, modified by me*/
+.DIV2 {
+  background: radial-gradient(circle at 50% 50%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 10%, rgb(255, 163, 77) 90%, rgb(255, 163, 77) 60%, rgb(19, 30, 37) 0%, rgb(19, 30, 37) 0%);
+  overflow-y: hidden;
+}
+.DIV3 {
+background: radial-gradient(circle at 50% 50%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 10%, rgb(255, 163, 77) 95%, rgb(255, 163, 77) 75%, rgb(19, 30, 37) 0%, rgb(19, 30, 37) 0%);
+  overflow-y: hidden;
+} /*gradients ^above^ by gradients.shecodes.io, modified by me*/
+.iframe {
+  border: 5px solid white;
+  background-color: #131e25;
+  overflow-y: hidden;
+}
+.iframe-black {
+  border: 5px solid black;
+  background-color: #131e25;
+  overflow-y: hidden;
+}
+.Project_Desc {
+  color:whitesmoke;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
+}
+.top {
+  color:#c7f8ff;
+  text-align: center;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline overline;
+  font-weight: bold;
+  font-size: 14pt;
+  overflow-y: hidden;
+}
+.top_div {
+  background: radial-gradient(circle at 50% 50%, rgb(255, 124, 0) 30%, rgb(255, 124, 0) 50%, rgb(255, 163, 77) 75%, rgb(255, 163, 77) 10%, rgb(19, 30, 37) 0%, rgb(19, 30, 37) 0%);
+  overflow-y: hidden;
+}
+.version {
+  text-align: right;
+  color: lightgrey;
+  font-size: 10pt;
+  opacity: 1;
+  line-height: 25px;
+  overflow-y: hidden;
+}
