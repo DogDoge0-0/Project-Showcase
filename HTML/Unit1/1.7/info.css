@@ -1,0 +1,37 @@
+html, body {
+  background: #c997c9;
+  height: 100%;
+  width: 99.5%;
+  font-family: comic sans ms;
+}
+.header {
+  text-align: center;
+  color: red;
+  font-size: 24pt;
+  -webkit-text-stroke: 1px black;
+}
+.wiki {
+  width: 90%;
+  height: 800px;
+  border: 3px solid greenyellow; 
+}
+.justify {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.video {
+  width: 1600px;
+  height: 900px;
+  border: 3px solid greenyellow;
+}
+.hr {
+  border-color: #ff00ff;
+  display: block;
+  border-width: 2px;
+  border-style: solid;
+}
+.back {
+  text-align: center;
+  font-size: 24pt;
+}

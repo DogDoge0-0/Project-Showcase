@@ -1,0 +1,57 @@
+html, body {
+  background: #c997c9;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: comic sans ms;
+  overflow-y: hidden;
+}
+.main_heading {
+  text-align: center;
+  color: darkslateblue;
+  font-family: Times New Roman;
+  line-height: 10%;
+}
+.secondary_heading {
+  text-align: center;
+  color: darkslateblue;
+  font-family: Times New Roman;
+}
+.sections {
+  text-align: center;
+  color: red;
+  font-size: 24pt;
+  -webkit-text-stroke: 1px black;
+}
+.preview {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid greenyellow;
+}
+.previewlong{
+  width: 410px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid greenyellow;
+}
+.justification {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-y: hidden;
+}
+hr {
+  border-color: #ff00ff;
+  display: block;
+  border-width: 2px;
+  border-style: solid;
+}
+.version {
+  color: white;
+  text-align: right;
+  font-size: 12pt;
+}
+.body {
+  overflow-y: scroll;
+}
