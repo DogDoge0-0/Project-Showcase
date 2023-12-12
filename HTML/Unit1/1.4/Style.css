@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+}
+div {
+  text-align: center;
+  overflow: hidden;
+  width: 650px;
+  background: #ffd17a;
+}
+h1 {
+  text-decoration: overline underline;
+  font-family: Times 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+h2 {
+  font-family: Times 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+h4 {
+  font-family: Times 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+img {
+  border: 3px solid #a28316;
+}
+.p1 {
+  color: white;
+}
