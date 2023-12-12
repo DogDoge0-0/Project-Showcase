@@ -1,0 +1,147 @@
+html, body {
+  height: 100%;
+  width: 100%;
+	background-color: aliceblue;
+  overflow: hidden;
+}
+.control {
+  height: 55vw;
+  width: 55vw;
+  display: flex;
+}
+.wheel {
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 50px;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  animation: wheel 10s ease-in-out infinite;
+  z-index: 2;
+  left: 7px;
+}
+.support {
+  background-color: darkgray;
+  position: absolute;
+  left: 312px;
+  top: 257px;
+  height: 4px;
+  width: 375px;
+  transform: rotate(60deg);
+  transform-origin: 0% 0%;
+  z-index: 1;
+}
+.support:nth-of-type(2) {
+  transform: rotate(120deg);
+}
+.support-2 {
+  background-color: darkgray;
+  position: absolute;
+  left: 313px;
+  top: 246px;
+  height: 20px;
+  width: 20px;
+  transform: rotate(60deg);
+  transform-origin: 0% 0%;
+  z-index: 1;
+  border-radius: 20px;
+}
+.line {
+  background-color: black;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0% 0%;
+}
+.line:nth-of-type(2) {
+  transform: rotate(60deg);
+}
+.line:nth-of-type(3) {
+  transform: rotate(120deg);
+}
+.line:nth-of-type(4) {
+  transform: rotate(180deg);
+}
+.line:nth-of-type(5) {
+  transform: rotate(240deg);
+}
+.line:nth-of-type(6) {
+  transform: rotate(300deg);
+}
+.cabin {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  border: 2px solid;
+  transform-origin: 50% 0%;
+  animation: cabins 10s ease-in-out infinite;
+  background-color: violet;
+}
+.cabin:nth-of-type(1) {
+  right: -8.5%;
+  top: 50%;
+  background-color: violet;
+}
+.cabin:nth-of-type(2) {
+  right: 17%;
+  top: 93.5%;
+  background-color: violet;
+}
+.cabin:nth-of-type(3) {
+  right: 67%;
+  top: 93.5%;
+  background-color: violet;
+}
+.cabin:nth-of-type(4) {
+  left: -8.5%;
+  top: 50%;
+  background-color: violet;
+}
+.cabin:nth-of-type(5) {
+  left: 17%;
+  top: 7%;
+  background-color: violet;
+}
+.cabin:nth-of-type(6) {
+  right: 17%;
+  top: 7%;
+  background-color: violet;
+}
+/* define the wheel animation */
+@keyframes wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes cabins {
+  0% {
+    transform: rotate(0deg);
+  }
+  16.6% {
+    background-color: red;
+  }
+  33.3% {
+    background-color: orange;
+  }
+  50% {
+    background-color: yellow;
+  }
+  66.7% {
+    background-color: green;
+  }
+  83.3% {
+    background-color: blue;
+  }
+  100% {
+    background-color: violet;
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
