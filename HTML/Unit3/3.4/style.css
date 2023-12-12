@@ -1,0 +1,73 @@
+html {
+  height: 100%;
+  width: 100%;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+  background-color: white;
+}
+
+.colorButton{
+  background-color: rgb(255,0,0);
+  height: 150px;
+  width: 150px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: none;
+  margin: 10px;
+}
+
+.button {
+  background-color: white;
+  border: 2.5px solid black;
+  border-radius: 10px;
+  font-size: 24pt;
+}
+
+.button:hover {
+  animation-name: buttonHover;
+  animation-duration: 1.25s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes buttonHover {
+  0% {
+    box-shadow: 0.5px 0.5px 1.25px grey;
+  }
+  50% {
+    box-shadow: 2px 2px 5px grey;
+  }
+  100% {
+    box-shadow: 0.5px 0.5px 1.25px grey;
+  }
+}
+
+#buttonWrapper{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+#colorValue{
+  margin: 0 auto;
+  text-align: center;
+}
+
+#answer{
+  margin: 0 auto;
+  text-align: center;
+}
+
+#reset{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#reset-button{
+	padding: 10px;
+	background: none;
+	border: 2px solid #000;
+	margin: 20px;
+}

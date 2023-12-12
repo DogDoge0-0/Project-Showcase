@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Color Guessing Game</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1>GUESS THE COLOR!</h1>
+  <p id="info">Six circles are shown below, one of which has its RGB values displayed above. Try to guess which one it is. You get three attempts.</p>
+	<h2 id="colorValue"></h2>
+
+	<div id="buttonWrapper">
+		<button class="colorButton"></button>
+		<button class="colorButton"></button>
+		<button class="colorButton"></button>
+		<button class="colorButton"></button>
+		<button class="colorButton"></button>
+		<button class="colorButton"></button>
+	</div>
+
+	<h2 id="answer"></h2>
+  <h3 id="streak"></h3>
+  <br>
+  
+	<div id="reset"><button id="resetButton" class="button">RESET</button></div>
+  <br><br>
+	<script src="script.js"></script>
+</body>
+
+</html>
