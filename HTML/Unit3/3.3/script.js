@@ -142,12 +142,6 @@ reverseBut.onclick = () => {
   if (reverse % 2 == 0) {
     reverseBut.disabled = true;
     guessSubmit.disabled = true;
-    if (window.self === window.top) {
-      html.classList.add('inverseAnim');
-    }
-    else {
-      html.classList.add('inverseAnimFrame');
-    }
 
     setTimeout(() => {
       document.title = "Number Generating Game"
