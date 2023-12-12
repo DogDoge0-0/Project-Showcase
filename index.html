@@ -1,218 +1,47 @@
-<!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home - Project Showcase</title>
-  <link href="CSS/Index.css" rel="stylesheet" type="text/css">
-  <link href="CSS/Main.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link rel="icon" type="image/x-icon" href="Images+Favicon/Favicon.png">
-  <script src="JS/JS.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
-
-<body onload="verFunction()">
-  <nav class="navbar bg-body-tertiary fixed-top navbar-expand-xxl">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="Images+Favicon/Favicon.png" class="img-fluid btn-l">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar">
-        <i class="bi bi-list burger"></i>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-            Project Showcase
-          </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-left flex-grow-1 pe-3">
-            <li class="nav-item justify-content-center d-flex">
-              <a class="nav-link buttonNav" href="HTML.html">
-                HTML
-              </a>
-            </li>
-            <li class="nav-item justify-content-center d-flex">
-              <a class="nav-link buttonNav" href="Java.html">
-                Java
-              </a>
-            </li>
-            <li class="nav-item justify-content-center d-flex">
-              <a class="nav-link buttonNav" href="Python.html">
-                Python
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <div class="content-wrap">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="carousel slide carosel-a d-none d-md-block" data-bs-ride="carousel" data-bs-pause="false">
-            <div class="carousel-indicators d-flex justify-content-center">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="5000">
-                <a href="HTML/Unit1/1.1.html">
-                  <img src="Images+Favicon/1.1.png" class="d-block w-100" alt="1.1">
-                </a>
-                <div class="carousel-caption d-none d-md-block hover stroke-t-b">
-                  <h5 class="stroke-t">
-                    1.1
-                  </h5>
-                  <p class="stroke-t">
-                    My first HTML project, remastered.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <a href="HTML/Unit1/1.6.html">
-                  <img src="Images+Favicon/1.6.png" class="d-block w-100" alt="1.6">
-                </a>
-                <div class="carousel-caption d-none d-md-block stroke-t-b">
-                  <h5 class="stroke-t">
-                    1.6
-                  </h5>
-                  <p class="stroke-t">
-                    My first iteration of this website.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="10000">
-                <a href="HTML/Unit2/2.2.html">
-                  <img src="Images+Favicon/2.2.gif" class="d-block w-100" alt="2.2">
-                </a>
-                <div class="carousel-caption d-none d-md-block stroke-t-b">
-                  <h5 class="stroke-t">
-                    2.2
-                  </h5>
-                  <p class="stroke-t">
-                    My first animation in CSS, updated.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <a href="HTML/Unit3/3.2.html">
-                  <img src="Images+Favicon/3.2.png" class="d-block w-100" alt="3.2">
-                </a>
-                <div class="carousel-caption d-none d-md-block stroke-t-b">
-                  <h5 class="stroke-t">
-                    3.2
-                  </h5>
-                  <p class="stroke-t">
-                    My first JavaScript webpage.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <h1 class="h1-t">
-            Hello!
-          </h1>
-          <h2 class="h2-t">
-            I write code.
-          </h2>
-          <p class="p-t">
-            I wrote this website (and sometimes I still am)! Here you can find everything that I have made, from
-            websites to web aplets. Follow my journey of computer science. Who knows, maybe you'll learn something too!
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="footer shadow-sm">
-    <div class="container-fluid footer-contain">
-      <div class="row mt-4">
-        <div class="col-lg-5 col-md-5 mb-2 mb-md-0">
-          <h5 class="text-uppercase d-flex justify-content-center">
-            Info
-          </h5>
-          <ul class="list-unstyled mb-0">
-            <li class="d-flex justify-content-center">
-              <a href="About.html" class="p-f-a">
-                About
-              </a>
-            </li>
-            <li class="d-flex justify-content-center">
-              <a href="FAQ.html" class="p-f-a">
-                FAQ
-              </a>
-            </li>
-            <li class="d-flex justify-content-center">
-              <a href="Changelog.html" class="p-f-a">
-                Changelog
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-2 mb-2 mb-md-0">
-          <h5 class="text-uppercase d-flex justify-content-center">
-            <form>
-              <input type="button" class="btn btn-outline-secondary BtT" value="Back to Top" onclick="window.location.href='#top'">
-            </form>
-          </h5>
-        </div>
-        <div class="col-lg-5 col-md-5 mb-2 mb-md-0">
-          <h5 class="text-uppercase d-flex justify-content-center">
-            Other Sites
-          </h5>
-          <ul class="list-unstyled">
-            <li class="d-flex justify-content-center">
-              <a target="_blank" href="https://project-showcase-v2.codeclash.repl.co/" class="p-f-a">
-                Project Showcase v2
-              </a>
-            </li>
-            <li class="d-flex justify-content-center">
-              <a target="_blank" href="https://task-6-web-showcase-arielmena.bwl-cs1-introcs.repl.co/" class="p-f-a">
-                Project Showcase v1
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-      <div class="container-fluid footer-contain">
-        <div class="row">
-          <div class="col-sm-6 p-f d-flex justify-content-start">
-            &nbsp;&nbsp;<i class="bi bi-cc-circle"></i>&nbsp;Catio 2023
-          </div>
-          <div class="col-sm-6 p-f d-flex justify-content-end right">
-            <span class="d-sm-inline-block">License:&nbsp;Creative&nbsp;Commons</span>
-            <span class="d-sm-inline-block">&nbsp;|&nbsp;</span>
-            <span id="myVer">v0.0.1</span>
-            <span class="d-sm-inline-block">&nbsp;|&nbsp;</span>
-            <i class="bi bi-phone-fill" title="This page supports phones"></i>&nbsp;&nbsp;
-          </div>
-        </div>
-      </div>
-  </footer>
-  <!-- Bootstrap JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-</body>
-
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>
+      Homemade Pizza - Task 1
+    </title>
+  </head>
+  
+  
+  <body>
+    
+    <h1>Homemade Pizza</h1>
+      
+    <p1>This is my own creation, with help from my dad. This pizza is a great way to spend some time with friends or family, as the recipe is built to let as many people as you want, make their own.</p1> <br>
+    <center>
+    <img src = "Pizza_Picture.JPG" length = 400 width = 400>
+    </center>
+    <hr>
+    <h3>Pieces of the Pie</h3>
+    <ul>
+      <li>Premade Dough</li>
+      <li>Ragu Homemade Style Pizza Sauce</li>
+      <li>Sargento Six Cheese Italian Fine Cut Cheese</li>
+      <li>BelGiorgio Mozzarella Cheese</li>
+      <li>Any Toppings</li>
+      <li>Baking Pan large enough to hold your dough</li>
+      <li>Aluminum Foil</li>
+    </ul>
+    <hr>
+    <h3>Assembling the Pie</h3>
+    <ol>
+      <li>Preheat your oven to 350°F or 175°C.</li>
+      <li>Spread Ragu Homemade Style Pizza Sauce on the dough evenly.</li>
+      <li>Sprinkle some Sargento Six Cheese Italian Fine Cut Cheese onto the pizza.</li>
+      <li>Add some BelGiorgio Mozzarella Cheese to the pizza, with at least 0.5in (1.3cm) spacing between the balls.</li>
+      <li>Add any toppings you enjoy on a pizza</li>
+      <li>Cover your baking pan with Aluminum Foil.</li>
+      <li>Put your pie onto the aluminum foil covered baking pan.</li>
+      <li>Put your pan and pie into the middlemost rack of your oven.</li>
+      <li>Cook for 12 to 14 minutes or until the center is hot.</li>
+      <li>Remove your pie from the oven and let it cool for one minute.</li>
+    </ol>
+    <hr>
+  </body>
+  
 </html>

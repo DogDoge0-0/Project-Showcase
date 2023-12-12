@@ -1,0 +1,35 @@
+body{
+background-color:black;
+}
+h1{
+color: orangered; 
+text-align: center;
+font-family: Garamond;
+}
+p1{
+color: white;
+text-align: justify; 
+font-family: Trebuchet MS;
+}
+img{
+margin-left: auto;
+margin-right: auto;
+margin: 5px;
+display: block;
+border: 2px solid white;
+}
+h3{
+color: orange; 
+text-align: justify;
+font-family: Garamond;
+}
+ul{
+color:white;
+text-align: justify;
+font-family: Trebuchet MS;
+}
+ol{
+color: white;
+text-align: justify;
+font-family: Trebuchet MS;
+}
