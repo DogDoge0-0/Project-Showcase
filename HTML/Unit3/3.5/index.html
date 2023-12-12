@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>BrickBreaker</title>
+	<!-- Bootstrap | DO NOT TOUCH -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<br>
+	<div class="center">
+		<div class="topMenuWrap" width="1000">
+			<div class="justify-content-center topMenu1">
+				<span class="pauseWrap">
+					<button class="butHide iPause" id="pause">
+						<i class="bi bi-pause"></i>
+					</button>
+					<button class="butHide iPause2 hidden" id="play">
+						<i class="bi bi-play"></i>
+					</button>
+				</span>
+				<span class="levelSelect">
+					<span class="word">Level
+						<span id="levelNowDisplay">0</span>
+					</span>
+					<button class="button" id="credit" type="button" data-bs-toggle="modal"
+						data-bs-target="#credits">Credits</button>
+					<button class="button levelSelectMain" id="levelSelect" type="button" data-bs-toggle="modal"
+						data-bs-target="#levelSelector">Level Select</button>
+				</span>
+			</div>
+			<div class="topMenu2">
+				<span class="infoDisplay" id="score">Score: 0</span>
+				<span class="infoDisplay levelSelect" id="lives">Lives: 0</span>
+			</div>
+		</div>
+	</div>
+	<div class="center">
+		<canvas id="gameCanvas" width="1000" height="562.5">
+			Your browser does not support HTML5 canvas content! Please open this page in Chrome or other Chrome based browsers
+			such as edge, brave,
+		</canvas>
+	</div>
+
+	<audio id="audio" src="pipe.mp3"></audio>
+
+
+	<audio id="brickBreak" src="brickBreak.mp3"></audio>
+	<audio id="sound" src="metal-pipe-falling-sound-effect-By-tuna.voicemod.net.mp3"></audio>
+
+	<div class="modal fade" data-bs-backdrop="static" id="levelSelector" tabindex="-1"
+		aria-labelledby="levelSelectorLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="levelSelectorLabel">Select A Level</h1>
+				</div>
+				<div class="modal-body justify-content-center" style="display: flex">
+					<button type="button" class="button" data-bs-dismiss="modal" id="level1">Level 1</button>
+					<button type="button" class="button" data-bs-dismiss="modal" id="level2">Level 2</button>
+					<img src="../assets/Stationary/lock.png" class="hidden" id="level2Lock">
+					<button type="button" class="button" data-bs-dismiss="modal" id="level3">Level 3</button>
+					<img src="../assets/Stationary/lock.png" class="hidden" id="level3Lock">
+					<button type="button" class="button" data-bs-dismiss="modal" id="level4">Level 4</button>
+					<img src="../assets/Stationary/lock.png" class="hidden" id="level4Lock">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="button buttonRed" data-bs-toggle="modal" data-bs-target="#confirmDelete"
+						id="progressClear">Clear Progress</button>
+					<button type="button" class="button buttonOrange back" data-bs-dismiss="modal">Back</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" data-bs-backdrop="static" id="confirmDelete" tabindex="-1"
+		aria-labelledby="confirmDeleteLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="confirmDeleteLabel">Are you Sure?</h1>
+				</div>
+				<div class="modal-body">
+					<button type="button" class="button buttonOrange back" data-bs-dismiss="modal"
+						id="progressClearConfirm">Yes</button>
+					<button type="button" class="button buttonRed back" data-bs-dismiss="modal">No</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" data-bs-backdrop="static" id="credits" tabindex="-1" aria-labelledby="creditsLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="creditsLabel">Credits</h1>
+				</div>
+				<div class="modal-body">
+					Core Framework by: <a
+						href="https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript"
+						target="_blank" class="a">mdn web docs</a> <br> Programming by: Catio and RxTitan<br>
+					Art by: <a href="https://schwarnhild.itch.io/brick-breaker-asset-pack?download" class="a"
+						target="_blank">schwarnhild</a><br> Powered by <a href="https://getbootstrap.com/" target="_blank"
+						class="a">Bootstrap v5.3</a><br>
+					v1.0.5
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="button buttonOrange back" data-bs-dismiss="modal">Back</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" data-bs-backdrop="static" id="popupPregame" tabindex="-1" aria-labelledby="popupPregameLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="popupPregameLabel">How To Play & Keybinds</h1>
+				</div>
+				<div class="modal-body words">
+					<ol>
+						<li>Drag your mouse across the screen to position the paddle.</li><br>
+						<li>Use the paddle to bounce the ball towards the bricks.</li><br>
+						<li>Destory all of the bricks to win the level</li>
+					</ol>
+					<ul>
+						<li>Press esc or space to pause/play the game.</li>
+						<li>Press the arrow keys to move the paddle.</li>
+					</ul>
+					<p>Please Note:</p> <p class=" wordSmall">Issues with the ball speed and flickering bricks are due to the browser that you are using, for optimal gaming, play on firefox or edge.</p>
+					<div class="popupShowContain">
+					<p class="popupShow">Don't Show This Again</p>&nbsp;
+					<label class="checkBox">
+						<input type="checkbox" class="checkBoxInner" id="popupShow">
+						<span class="checkBoxCheck"></span>
+					</label>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="button buttonGreen back" data-bs-dismiss="modal" id="back"
+						type="button">Start</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" data-bs-backdrop="static" id="popupWin" tabindex="-1" aria-labelledby="popupWinLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="popupWinLabel">You Won!</h1>
+				</div>
+				<div class="modal-body word">
+					Congratulations, choose an option below to progress to the next level!
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="button back" data-bs-dismiss="modal" id="levelSelect" type="button"
+						data-bs-target="#levelSelector">Level Select</button>
+					<button type="button" class="button buttonOrange back" data-bs-dismiss="modal" id="restart">Restart</button>
+					<button type="button" class="button buttonGreen back" data-bs-dismiss="modal" id="nextLevel">Next
+						Level</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" data-bs-backdrop="static" id="popupLose" tabindex="-1" aria-labelledby="popupLoseLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="popupLoseLabel">You Lost!</h1>
+				</div>
+				<div class="modal-body word">
+					Select an option below to continue playing.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="button buttonOrange back" data-bs-dismiss="modal"
+						id="restartFull">Restart</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Bootstrap | DO NOT TOUCH  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+		crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
