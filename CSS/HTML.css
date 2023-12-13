@@ -35,6 +35,7 @@ html, body {
 /* Showcase Pages */
 .iFrameLoading {
 	animation: gearTurn 2s infinite ease-in-out;
+	z-index: 1;
 }
 @keyframes gearTurn {
   0% {
@@ -60,6 +61,7 @@ html, body {
   overflow-x: hidden;
 	border: 5px solid #ff9737;
 	border-radius: 25px;
+	z-index: 2;
 }
 .background-s {
   background: linear-gradient(to top, #353535 0%, black 100%)  #353535;
