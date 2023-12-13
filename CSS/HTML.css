@@ -34,7 +34,15 @@ html, body {
 }
 /* Showcase Pages */
 .iFrameLoading {
-	animation: gearTurn 2s infinite ease-in-out;
+	border: none;
+  background: transparent;
+  font-size: 72pt;
+  width: 96px;
+  height: 96px;
+  animation: gearTurn 2s infinite ease-in-out;
+  padding: 0;
+  margin: 0;
+  position: relative;
 	z-index: 1;
 }
 @keyframes gearTurn {
