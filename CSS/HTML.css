@@ -33,6 +33,22 @@ html, body {
 	color: white;
 }
 /* Showcase Pages */
+.iFrameLoading {
+	animation: gearTurn 2s infinite ease-in-out;
+}
+@keyframes gearTurn {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  90% {
+    transform: rotate(720deg);
+  }
+
+  100% {
+    transform: rotate(720deg);
+  }
+}
 .iframe-contain {
   height: 75vh!important;
   background-size: 100%!important;
