@@ -36,12 +36,14 @@ html, body {
 .iframe-contain {
   height: 75vh!important;
   background-size: 100%!important;
-  background: radial-gradient(circle at 50% 50%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 10%, rgb(255, 163, 77) 90%, rgb(255, 163, 77) 70%, rgb(0, 0, 0), rgb(0, 0, 0) 0%);
+  background: radial-gradient(circle at 50% 50%, #ff9737 0%, #ff9737 10%, #ff9737 90%, #ff9737 70%, rgb(0, 0, 0), rgb(0, 0, 0) 0%);
 } /* Gradient ^above^ by gradients.shecodes.io, modified by me */
 .iframe {
   width: 80%!important;
   height: 75vh!important;
   overflow-x: hidden;
+	border: 5px solid #ff9737;
+	border-radius: 25px;
 }
 .background-s {
   background: linear-gradient(to top, #353535 0%, black 100%)  #353535;
