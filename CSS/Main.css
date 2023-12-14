@@ -44,9 +44,21 @@ html {
 	width: 300px;
 	height: 50px;
 	border: 1px solid white;
-	border-radius: 5px;
+	border-radius: 25%;
 	background: #333;
 	color: #b1b1b1;
+	border-radius-top-right: 0;
+	border-radius-bottom-right: 0;
+	padding: 0;
+	margin: 0;
+}
+.search-icon-button {
+	border-radius-top-left: 25%;
+	border-radius-bottom-left: 25%;
+	width: 300px;
+	height: 50px;
+	padding: 0;
+	margin: 0;
 }
 .search-button:hover {
 	border: 2px solid white;
