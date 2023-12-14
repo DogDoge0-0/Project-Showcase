@@ -61,7 +61,7 @@ html {
 	background: #333;
 	color: #b1b1b1;
 }
-.search-button:hover {
+.search-button-hover:hover {
 	border: 2px solid white;
 	color: whitesmoke;
 }
