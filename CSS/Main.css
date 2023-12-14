@@ -63,6 +63,10 @@ html, body {
 	height: 50px;
 	font-size: 14pt;
 }
+.search-icon-button:hover,
+.search-button:hover {
+	border: 2px solid white;
+}
 .search-button-hover {
 	border: none;
 	background: transparent;
@@ -71,10 +75,6 @@ html, body {
 	color: #b1b1b1;
 	padding: 0;
 	margin: 0;
-}
-.search-button-hover:hover {
-	border: 2px solid white;
-	color: whitesmoke;
 }
 #searchResultsModalLabel {
 	width: 75%;
