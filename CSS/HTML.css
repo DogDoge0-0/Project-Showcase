@@ -33,31 +33,6 @@ html, body {
 	color: white;
 }
 /* Showcase Pages */
-.iFrameLoading {
-	border: none;
-  background: transparent;
-  font-size: 72pt;
-  width: 96px;
-  height: 96px;
-  animation: gearTurn 2s infinite ease-in-out;
-  padding: 0;
-  margin: 0;
-  position: relative;
-	z-index: 1;
-}
-@keyframes gearTurn {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  90% {
-    transform: rotate(720deg);
-  }
-
-  100% {
-    transform: rotate(720deg);
-  }
-}
 .iframe-contain {
   height: 75vh!important;
   background-size: 100%!important;
@@ -70,6 +45,10 @@ html, body {
 	border: 5px solid #ff9737;
 	border-radius: 25px;
 	z-index: 2;
+}
+.scrollingiframe {
+	border-radius-top-right: 0px!important;
+	border-radius-bottom-right: 0px!important;
 }
 .background-s {
   background: linear-gradient(to top, #353535 0%, black 100%)  #353535;
