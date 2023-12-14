@@ -45,10 +45,6 @@ html {
 	border: 1px solid white;
 	border-top-left-radius: 12.5px;
 	border-bottom-left-radius: 12.5px;
-	background: #333;
-	color: #b1b1b1;
-	padding: 0;
-	margin: 0;
 }
 .search-icon-button {
 	border: 1px solid white;
@@ -56,11 +52,16 @@ html {
 	border-bottom-right-radius: 12.5px;
 	width: 50px;
 	height: 50px;
-	padding: 0;
-	margin: 0;
+	font-size: 14pt;
+}
+.search-button-hover {
+	border: 1px solid white;
+	width: 350px;
+	height: 50px;
 	background: #333;
 	color: #b1b1b1;
-	font-size: 14pt;
+	padding: 0;
+	margin: 0;
 }
 .search-button-hover:hover {
 	border: 2px solid white;
