@@ -8,7 +8,7 @@ html, body {
   background-attachment: fixed;
   position: relative;
 }
-html {
+html, body {
   -webkit-overscroll-behavior-x: none; /* Safari, Chrome */
   overscroll-behavior-x: none;
 	overflow-x: hidden!important;
