@@ -311,7 +311,7 @@ function restartLevel() {
 //different than the other ones becuase you cannot advance past level 4 (outside the function)
 if (levelNow == 4) {
   nextLevel.disabled = true;
-  nextLevel.setAttribute('title', 'You have completed the entire game, congradulations! More levels may be added in the future.');
+  nextLevel.setAttribute('title', 'You have completed the entire game, congratulations!');
   nextLevel.classList.add('buttonDisabled');
   nextLevel.classList.remove('button');
 }
