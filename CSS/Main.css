@@ -40,6 +40,9 @@ html, body {
   color: lightgrey!important;
 }
 .search-button {
+	position: relative;
+	top: 0;
+	left: 0;
 	background: #333;
 	border: 1px solid white;
 	width: 300px;
@@ -49,6 +52,9 @@ html, body {
 	border-bottom-left-radius: 12.5px;
 }
 .search-icon-button {
+	top: 0;
+	left: 300px;
+	position: relative;
 	background: #333;
 	border: 1px solid white;
 	border-top-right-radius: 12.5px;
