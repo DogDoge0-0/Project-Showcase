@@ -63,8 +63,8 @@ html, body {
 	height: 50px;
 	font-size: 14pt;
 }
-.search-icon-button:hover,
-.search-button:hover {
+.search-button-hover:hover {
+	border-radius: 12.5px;
 	border: 2px solid white;
 }
 .search-button-hover {
