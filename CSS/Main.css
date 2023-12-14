@@ -51,8 +51,11 @@ html {
 	border: 2px solid white;
 	color: whitesmoke;
 }
+#searchResultsModalLabel {
+	width: 75%;
+}
 .search {
-	width: 225px;
+	width: 75%;
 	height: 50px;
 	border: 1px solid white;
 	border-radius: 5px;
