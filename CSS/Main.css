@@ -40,6 +40,8 @@ html, body {
   color: lightgrey!important;
 }
 .search-button {
+	background: #333;
+	border: 1px solid white;
 	width: 300px;
 	height: 50px;
 	border: 1px solid white;
@@ -47,6 +49,7 @@ html, body {
 	border-bottom-left-radius: 12.5px;
 }
 .search-icon-button {
+	background: #333;
 	border: 1px solid white;
 	border-top-right-radius: 12.5px;
 	border-bottom-right-radius: 12.5px;
@@ -55,10 +58,10 @@ html, body {
 	font-size: 14pt;
 }
 .search-button-hover {
-	border: 1px solid white;
+	border: none;
+	background: transparent;
 	width: 350px;
 	height: 50px;
-	background: #333;
 	color: #b1b1b1;
 	padding: 0;
 	margin: 0;
