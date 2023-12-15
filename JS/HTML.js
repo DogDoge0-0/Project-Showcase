@@ -36,7 +36,7 @@ const yourContentArray = [
 	{
 		title: '1.1: Make a Recipe',
 		link: '../HTML/Unit1/1.1.html',
-		content: 'My first project, featuring the 5 most basic tags.'
+		content: 'My first project, featuring the five most basic tags.'
 	},
 	{
 		title: '1.2: Make a Card',
