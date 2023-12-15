@@ -75,6 +75,9 @@ html {
 #searchResultsModalLabel {
 	width: 75%;
 }
+.search {
+	text-align: center;
+}
 .buttonNav {
   background-color: #3caaaa;
   border: 1px solid white;
