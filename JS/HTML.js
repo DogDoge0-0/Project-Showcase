@@ -118,7 +118,7 @@ const yourContentArray = [
 	{
 		title: '3.5: Minigame',
 		link: '../HTML/Unit3/3.5.html',
-		content: 'This project was a collaborative effort to make an actual game, and we did it, <em>kind of</em>.'
+		content: 'This project was a collaborative effort to make an actual game, and we did it. <em>Kind of</em>.'
 	},
 ];
 // [SEARCH]
