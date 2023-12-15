@@ -64,8 +64,7 @@ html {
 	font-size: 14pt;
 }
 .search-button-hover:hover {
-	border-radius: 12.5px;
-	border: 2px solid white;
+	text-weight: bold;
 }
 .search-button-hover {
 	border: none;
