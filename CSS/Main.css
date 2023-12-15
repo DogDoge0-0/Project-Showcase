@@ -63,7 +63,7 @@ html {
 	height: 50px;
 	font-size: 14pt;
 }
-.search-button-hover:hover {
+.search-button-hover *:hover {
 	text-weight: bold;
 }
 .search-button-hover {
