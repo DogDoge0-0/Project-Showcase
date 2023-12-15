@@ -92,7 +92,7 @@ const yourContentArray = [
 	{
 		title: '2.5: Responsive Personal Website',
 		link: '../HTML/Unit2/2.5.html',
-		content: 'This project is this project.'
+		content: 'This project is <em>this</em> project.'
 	},
 	// Unit 3
 	{
