@@ -52,7 +52,7 @@ html {
 	border-bottom-left-radius: 12.5px;
 }
 .search-icon-button {
-	top: 0;
+	top: -50px;
 	left: 300px;
 	position: relative;
 	background: #333;
