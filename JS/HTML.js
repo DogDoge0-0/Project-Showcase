@@ -1,5 +1,5 @@
 // Initialization
-let body document.querySelector("body");
+let body = document.querySelector("body");
 let buttons = document.querySelectorAll(".btn-c-m");
 let searchInput = document.querySelector('#searchInput');
 let searchResults = document.querySelector('#searchResults');
