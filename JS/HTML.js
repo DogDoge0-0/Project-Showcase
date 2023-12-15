@@ -5,7 +5,7 @@ let searchResults = document.querySelector('#searchResults');
 
 // Add an event listener to the input field to trigger search
 searchInput.addEventListener('input', performSearch);
-buttons.addEventListener("load", updateButtonFontSize;
+buttons.addEventListener("load", updateButtonFontSize0;
 // [FONT SIZE CHANGER]
 function updateButtonFontSize() {
   let screenWidth = window.innerWidth;
