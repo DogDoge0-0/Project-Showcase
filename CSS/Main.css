@@ -290,6 +290,9 @@ nav .buttonGreen {
 footer-contain .row {
 	width: 100%!important;
 }
+.d-sm-inline-block {
+	padding-bottom: 5px;
+}
 .content-wrap {
   min-height: 90vh;
 }
