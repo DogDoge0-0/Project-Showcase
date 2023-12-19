@@ -287,6 +287,9 @@ nav .buttonGreen {
 .footer-contain {
   padding:0!important;
 }
+footer-contain .row {
+	width: 100%!important;
+}
 .content-wrap {
   min-height: 90vh;
 }
