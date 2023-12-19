@@ -28,8 +28,13 @@ html {
   color: #0000ff;
   font-size: 24pt;
 }
+@media (max-width: 1200px) {
+  nav.navbar-expand-xl .offcanvas {
+    background-image: linear-gradient(to bottom, #434343 75%, black 100%);
+  }
+}
 @media (max-width: 991px) {
-  .offcanvas {
+  nav.navbar-expand-md .offcanvas {
     background-image: linear-gradient(to bottom, #434343 75%, black 100%);
   }
 }
