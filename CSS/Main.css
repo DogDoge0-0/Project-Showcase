@@ -33,7 +33,7 @@ html {
     background-image: linear-gradient(to bottom, #434343 75%, black 100%);
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   nav.navbar-expand-md .offcanvas {
     background-image: linear-gradient(to bottom, #434343 75%, black 100%);
   }
