@@ -283,7 +283,6 @@ nav .buttonGreen {
   border-top: 5px solid #353535;
   position: relative;
   width: 100vw;
-	overflow: hidden;
 }
 .footer-contain {
   padding: 0!important;
@@ -311,14 +310,4 @@ nav .buttonGreen {
 }
 .right {
   text-align: right;
-}
-.footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 200vh;
-  background: inherit;
-  z-index: -1;
 }
