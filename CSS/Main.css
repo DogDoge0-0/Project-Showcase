@@ -320,4 +320,5 @@ nav .buttonGreen {
   height: 200vh;
   background: inherit;
   z-index: -1;
+  overflow: hidden;
 }
