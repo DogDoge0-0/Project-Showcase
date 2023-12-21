@@ -316,6 +316,7 @@ nav .buttonGreen {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100vw;
   height: 200vh;
   background: inherit;
   z-index: -1;
