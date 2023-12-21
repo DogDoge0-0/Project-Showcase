@@ -311,3 +311,12 @@ nav .buttonGreen {
 .right {
   text-align: right;
 }
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200vh;
+  background: inherit;
+  z-index: -1;
+}
