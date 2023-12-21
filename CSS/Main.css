@@ -282,7 +282,8 @@ nav .buttonGreen {
   background-color: #121212;
   border-top: 5px solid #353535;
   position: relative;
-  width: 100%;
+  width: 100vw;
+	overflow: hidden;
 }
 .footer-contain {
   padding: 0!important;
@@ -320,5 +321,4 @@ nav .buttonGreen {
   height: 200vh;
   background: inherit;
   z-index: -1;
-  overflow: hidden;
 }
