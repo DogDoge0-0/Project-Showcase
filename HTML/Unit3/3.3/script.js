@@ -316,7 +316,7 @@ guessSubmit.onclick = () => {
 setInterval(() => {
   const guessValue = parseInt(guessField.value);
   
-  if (!isNaN(guessValue) && guessValue >= 1 && guessValue <= 100 && !(reverse % 2 == 0)) {
+  if (!isNaN(guessValue) && guessValue >= 1 && guessValue <= 100) {
     guessSubmit.disabled = false;
     guessSubmit.setAttribute("title", "");
   }
