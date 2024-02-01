@@ -37,8 +37,9 @@ function checkGuess() {
   // If guessCount is exactly equal to 1, then they are on the first guess. (asking if user is on the first guess, then it will do the squiggly brackets (bracket for reference)--> https://upload.wikimedia.org/wikipedia/en/e/ed/Bridget_Guilty_Gear.png)
 
   if (guessCount === 1) {
+    reverseBut.disabled = true;
     block = true;
-    // On first turn, add text "previous guesses" to theat part of the HML document, only happens once 
+    // On first turn, add text "previous guesses" to theat part of the HTML document, only happens once 
     guesses.textContent = 'Previous guesses: ';
     guesses.textContent += userGuess;
   }
@@ -109,6 +110,8 @@ function setGameOver() {
 function resetGame() {
   guessCount = 1;
   cpuGuessCount = 0;
+  guessSubmit.disabled = false;
+  reverseBut.disabled = false;
 
   // Grabs all of the <p> tags in the div
   const resetParas = document.querySelectorAll('.resultParas p');
@@ -207,6 +210,8 @@ reverseBut.onclick = () => {
 function numberGen() {
   // Get Number
   const userNumber = Number(guessField.value);
+  guessSubmit.disabled = true;
+  reverseBut.disabled = true;
 
 
   // Add on the user's guessed number to the area on the page that lists the cpu's guesses 
