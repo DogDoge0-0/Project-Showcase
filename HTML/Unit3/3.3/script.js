@@ -113,6 +113,7 @@ function resetGame() {
   cpuGuessCount = 0;
   guessSubmit.disabled = false;
   reverseBut.disabled = false;
+  cpuCalc = false;
 
   // Grabs all of the <p> tags in the div
   const resetParas = document.querySelectorAll('.resultParas p');
@@ -230,7 +231,6 @@ function numberGen() {
       reset = true;
       clearInterval(intervalID);
       block = false;
-      cpuCalc = false;
     }
     else if (cpuGuessCount === 10) {
       lastResult.textContent = 'I ran out of tries!';
@@ -254,7 +254,6 @@ function numberGen() {
           reset = true;
           clearInterval(intervalID);
           block = false;
-          cpuCalc = false;
         }
         else if (cpuGuessCount === 10) {
           lastResult.textContent = 'I ran out of tries!';
@@ -276,7 +275,6 @@ function numberGen() {
           reset = true;
           clearInterval(intervalID);
           block = false;
-          cpuCalc = false;
         }
         else if (cpuGuessCount === 10) {
           lastResult.textContent = 'I ran out of tries!';
