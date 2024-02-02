@@ -48,6 +48,7 @@ body {
   border-radius: 10px;
   cursor: pointer!important;
 }
+
 .button:hover {
   animation-name: buttonHover;
   animation-duration: 1.25s;
