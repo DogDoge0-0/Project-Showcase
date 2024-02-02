@@ -35,7 +35,7 @@ else {
 function checkGuess() {
 
   const userGuess = Number(guessField.value);
-  // If guessCount is exactly equal to 1, then they are on the first guess. (asking if user is on the first guess, then it will do the squiggly brackets (bracket for reference)--> https://upload.wikimedia.org/wikipedia/en/e/ed/Bridget_Guilty_Gear.png)
+  // If guessCount is exactly equal to 1, then they are on the first guess.
 
   if (guessCount === 1) {
     reverseBut.disabled = true;
