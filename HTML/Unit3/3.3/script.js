@@ -1,4 +1,5 @@
 // Initialization
+let cpuCalc = false;
 let min = 1;
 let max = 100;
 let html = document.querySelector("html")
@@ -212,6 +213,7 @@ function numberGen() {
   const userNumber = Number(guessField.value);
   guessSubmit.disabled = true;
   reverseBut.disabled = true;
+  cpuCalc = true;
 
 
   // Add on the user's guessed number to the area on the page that lists the cpu's guesses 
@@ -228,6 +230,7 @@ function numberGen() {
       reset = true;
       clearInterval(intervalID);
       block = false;
+      cpuCalc = false;
     }
     else if (cpuGuessCount === 10) {
       lastResult.textContent = 'I ran out of tries!';
@@ -250,6 +253,8 @@ function numberGen() {
           setGameOver(); // Calls function that ends the game 
           reset = true;
           clearInterval(intervalID);
+          block = false;
+          cpuCalc = false;
         }
         else if (cpuGuessCount === 10) {
           lastResult.textContent = 'I ran out of tries!';
@@ -271,6 +276,7 @@ function numberGen() {
           reset = true;
           clearInterval(intervalID);
           block = false;
+          cpuCalc = false;
         }
         else if (cpuGuessCount === 10) {
           lastResult.textContent = 'I ran out of tries!';
@@ -316,7 +322,7 @@ guessSubmit.onclick = () => {
 setInterval(() => {
   const guessValue = parseInt(guessField.value);
   
-  if ((!isNaN(guessValue) && guessValue >= 1 && guessValue <= 100) && (reverse % 2 == 0 || )) {
+  if ((!isNaN(guessValue) && guessValue >= 1 && guessValue <= 100) && (!(reverse % 2 == 0) || cpuCalc == false)) {
     guessSubmit.disabled = false;
     guessSubmit.setAttribute("title", "");
   }
