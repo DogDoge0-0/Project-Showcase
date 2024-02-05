@@ -203,7 +203,6 @@ reverseBut.onclick = () => {
     }, 1980);
     setTimeout(() => {
       reverseBut.disabled = false;
-      guessSubmit.disabled = false;
     }, 2100);
   }
 }
