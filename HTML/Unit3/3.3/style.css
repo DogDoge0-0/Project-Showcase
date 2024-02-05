@@ -103,7 +103,7 @@ body {
 .inverseFrame {
   filter: invert(1);
   -webkit-filter: invert(1);
-  background-color: black!important;
+  background-color: white!important;
 }
 
 .inverseAnimFrame {
