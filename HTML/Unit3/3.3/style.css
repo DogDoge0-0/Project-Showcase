@@ -145,7 +145,7 @@ body {
   100% {
     filter: invert(1);
     -webkit-filter: invert(1);
-    background-color: black;
+    background-color: white;
   }
 }
 
