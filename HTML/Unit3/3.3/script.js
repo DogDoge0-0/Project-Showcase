@@ -156,7 +156,7 @@ reverseBut.onclick = () => {
 
     setTimeout(() => {
       document.title = "Number Generating Game"
-      headerMain.textContent = "🎯 Number Generating Game 🔢"
+      headerMain.textContent = "🎯Number Generating Game 🔢"
       info.textContent = "You will select a random number between 1 and 100. The computer will attempt to guess it in 10 tries. Just like you, the computer will know if the number was too high or too low."
       guessBefore.innerHTML = "ENTER A NUMBER:&nbsp;&nbsp;"
       buttonSubmit.setAttribute("value", "Submit Number");
