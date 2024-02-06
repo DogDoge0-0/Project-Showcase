@@ -299,7 +299,7 @@ function numberGen() {
     }
   }, 1000);
 }
-// The Click That Starts It All
+// The Click That Starts it all
 guessSubmit.onclick = () => {
   const guessValue = parseInt(guessField.value);
   if (guessValue >= 1 && guessValue <= 100) {
