@@ -32,6 +32,9 @@ html, body {
 #searchResults div>p {
 	color: white;
 }
+#searchResultsModal {
+	padding-right: 0!important;
+}
 /* Showcase Pages */
 .iframe-contain {
   height: 75vh!important;
